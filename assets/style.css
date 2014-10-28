@@ -16,9 +16,8 @@ body * {
     box-sizing: border-box;
 }
 
-html,body {
-    width: 100%;
-    height: 100%;
+body {
+    margin: 0 0 100px; /* for footer */
 }
 
 html {
@@ -32,11 +31,15 @@ html {
     -ms-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased;
+    position: relative;
+    min-height: 100%;
+    width: 100%;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block;
 }
+
 body > header {
     border-top: 3px solid #AD1F0F;
 }
@@ -1124,6 +1127,11 @@ pre,code {
     background: #f8f8f8;
     font-family: 'Gruppo';
     font-weight: 300;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
 
 .video-container {
