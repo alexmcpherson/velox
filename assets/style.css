@@ -17,7 +17,7 @@ body * {
 }
 
 body {
-    margin: 0 0 100px; /* for footer */
+    margin: 0 0 70px; /* for footer */
 }
 
 html {
@@ -54,7 +54,7 @@ header nav.site_width {
     margin-bottom: 4rem;
 }
 
-nav ul {
+nav ul, footer ul {
     list-style: none;
     margin: 0;
 }
@@ -69,10 +69,16 @@ nav ul li {
     font-family: 'Gruppo';
 }
 
-nav ul li a:hover {
+footer ul li {
+    display: inline-block;
+}
+
+ul li a:hover {
     color: #AD1F0F;
-    border-bottom: 1px solid #333;
     padding-bottom: .7rem;
+}
+nav li a:hover {
+    border-bottom: 1px solid #333;
 }
 
 blockquote,q {
@@ -1124,13 +1130,13 @@ pre,code {
 }
 
 .site-footer {
-    background: #f8f8f8;
+    background: #D8D8D8;
     font-family: 'Gruppo';
     font-weight: 300;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 75px;
     width: 100%;
 }
 
